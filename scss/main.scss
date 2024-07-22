@@ -1,0 +1,57 @@
+@import "./components/_general.scss";
+@import "./components/_header.scss";
+@import "./components/_first-screen.scss";
+@import "./components/_page.scss";
+@import "./components/_section1.scss";
+@import "./components/_aside.scss";
+@import "./components/_scroll-comment.scss";
+
+/*black*/
+@font-face {
+    font-family: "TT Firs";
+    src: url("../font/TTFirs/TTFirs-Black.woff") format("woff");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "TT Firs";
+    src: url("../font/TTFirs/TTFirs-ExtraBold.woff") format("woff");
+    font-weight: 800;
+}
+
+/*medium*/
+@font-face {
+    font-family: "TT Firs";
+    src: url("../font/TTFirs/TTFirs-Medium.woff2") format("woff2");
+    font-weight: 500;
+}
+
+/*regular*/
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../font/CenturyGothic/CenturyGothic.woff") format("woff");
+    font-weight: 400;
+}
+
+/*regular*/
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../font/CenturyGothic/CenturyGothic-Bold.woff") format("woff");
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: "Radiate Sans Expanded";
+    src: url("../font/RadiateSans/radiate-sans-semi-bold-expanded.woff") format("woff");
+}
+
+
+:root {
+    --white: #ffffff;
+    --brown: #393333;
+    --yellow: #FFCF5C;
+    --orange: #FFC24B;
+    --gray: #646469;
+    --border-gray: #cccccc;
+}

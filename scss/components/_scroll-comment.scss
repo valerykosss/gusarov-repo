@@ -1,0 +1,26 @@
+.scroll-comment__panel{
+    width: fit-content;
+    z-index: 6;
+    position: fixed;
+    top: calc(80vh);
+    right: 30px;
+
+    .panel-item.scroll{
+        width: 3.125rem;
+        height: 3.125rem;
+        background-image: url("/images/up-icon.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .panel-item.comment{
+        width: 3.125rem;
+        height: 3.125rem;
+        background-image: url("/images/contact-us-icon.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+}

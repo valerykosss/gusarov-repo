@@ -1,0 +1,456 @@
+.first-screen{
+    color: var(--white);
+    padding: 165px 0 50px 0;
+    background-image: url(/images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__header{
+        font-family: "TT Firs";
+        font-weight: 900;
+        color: var(--white);
+        margin-bottom: 2.5rem;
+    }
+
+    &__author{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 32%;
+        margin-bottom: 2.5rem;
+    }
+
+    .author{
+        font-family: "TT Firs";
+        &__photo{
+            width: 6.25rem;
+            height: 6.25rem;
+            position: relative;
+        }
+
+        &__photo img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 6.25rem;
+        }
+
+        &__info{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__info-name{
+            font-size: 1.125rem;
+            font-weight: 800;
+            line-height: 1.5rem;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        &__info-position{
+            font-size: 0.875rem;
+            line-height: 1.125rem;
+            margin-bottom: 0.25rem;
+        }
+
+
+        &__info-experience{
+            font-size: 0.875rem;
+            line-height: 1.125rem;
+            margin-bottom: 0.25rem;
+        }
+    }
+
+    &__article-dates{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .date__info{
+        width: 36.1%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1.25rem;
+        font-size: 1rem;
+    }
+
+    .date__info-publication span, .date__info-renewal span {
+        font-weight: 700;
+    }
+
+    &__article-statistics{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .stat{
+        width: 36.1%;
+        margin-bottom: 1.25rem;
+        font-size: 1rem;
+
+        &__read-time{
+            position: relative;
+            line-height: 20px;
+        }
+
+        &__read-time::before{
+            content: '';
+            display: inline-block;
+            width: 1.875rem;
+            height: 1.875rem;
+            background-image: url('../../images/time-icon.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 0.625rem;
+            vertical-align: middle;
+        }
+
+        &__views{
+            position: relative;
+            line-height: 1.25rem;
+        }
+
+        &__views:before{
+            content: '';
+            display: inline-block;
+            width: 1.875rem;
+            height: 1.875rem;
+            background-image: url('../../images/eye-icon.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 0.625rem;
+            vertical-align: middle;   
+        }
+
+        &__likes{
+            position: relative;
+            line-height: 1.25rem;
+        }
+
+        &__likes:before{
+            content: '';
+            display: inline-block;
+            width: 1.875rem;
+            height: 1.875rem;
+            background-image: url('../../images/like-icon.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 0.625rem;
+            vertical-align: middle;   
+        }
+
+        &__share{
+            position: relative;
+            line-height: 1.25rem;
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            &:hover .stat__popup {
+                visibility: visible;
+                opacity: 1;
+                pointer-events: auto;
+                transition: 0.8s ease-in-out;
+            }
+        }
+
+        &__popup{
+            width: max-content;
+            color: var(--brown);
+            background-color: var(--white);
+            border: 1px solid var(--border-gray);
+            padding: 1.25rem;
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+            top: 100%;
+            left: 0;
+            pointer-events: none;
+            transition: 0.8s ease-in-out;
+            z-index: 4;
+            font-size: 0.875rem;
+        }
+
+        &__share:before{
+            content: '';
+            display: inline-block;
+            width: 1.875rem;
+            height: 1.875rem;
+            background-image: url('../../images/share-icon.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 0.625rem;
+            vertical-align: middle;   
+        }
+
+        &__share-popup-item{
+            margin-bottom: 0.625rem;
+        }
+
+        &__share-popup-item a{
+            color: var(--brown);
+            cursor: pointer;
+        }
+
+        &__share-popup-item.vk{
+            position: relative;
+        }
+
+        &__share-popup-item.vk:before{
+            content: '';
+            display: inline-block;
+            width: 1.25rem;
+            height: 1.25rem;
+            background-image: url('../../images/vk.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 0.625rem;
+            vertical-align: middle;   
+        }
+
+        &__share-popup-item.x{
+            position: relative;
+        }
+
+        &__share-popup-item.x:before{
+            content: '';
+            display: inline-block;
+            width: 1.25rem;
+            height: 1.25rem;
+            background-image: url('../../images/x.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 0.625rem;
+            vertical-align: middle;   
+        }
+
+        &__share-popup-item.telegram{
+            position: relative;
+        }
+
+        &__share-popup-item.telegram:before{
+            content: '';
+            display: inline-block;
+            width: 1.25rem;
+            height: 1.25rem;
+            background-image: url('../../images/telegram.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 0.625rem;
+            vertical-align: middle;   
+        }
+
+        &__share-popup-item.odnokassniki{
+            position: relative;
+        }
+
+        &__share-popup-item.odnokassniki:before{
+            content: '';
+            display: inline-block;
+            width: 1.25rem;
+            height: 1.25rem;
+            background-image: url('../../images/odnoklassniki.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 0.625rem;
+            vertical-align: middle;   
+        }
+
+        &__share-popup-item.copy-link{
+            position: relative;
+        }
+
+        &__share-popup-item.copy-link:before{
+            content: '';
+            display: inline-block;
+            width: 1.25rem;
+            height: 1.25rem;
+            background-image: url('../../images/copy-link.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 0.625rem;
+            vertical-align: middle;   
+        }
+
+        &__comments{
+            position: relative;
+            line-height: 1.25rem;
+        }
+
+        &__comments:before{
+            content: '';
+            display: inline-block;
+            width: 1.875rem;
+            height: 1.875rem;
+            background-image: url('../../images/comment-icon.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-right: 0.625rem;
+            vertical-align: middle;   
+        }
+    }
+
+    &__article-tags{
+        display: flex;
+        flex-direction: row;
+        font-size: 1rem;
+
+        .tags__list-item{
+            padding: 0.375rem 1.25rem;
+            color: var(--brown);
+            background-color: var(--yellow);
+            border-radius: 2.5rem;
+        }
+
+
+        .tags__list-item:not(:last-child) {
+            margin-right: 0.625rem;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+    .first-screen .date__info{
+        width: 34%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    .first-screen{
+        padding: 100px 0 50px 0;
+    }
+
+}
+
+
+@media screen and (max-width: 1140px) {
+
+    .first-screen .date__info{
+        width: 40%;
+    }
+    .first-screen .author {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .first-screen .date__info{
+        width: 50%;
+    }
+
+    .first-screen .author {
+        width: 42%;
+    }
+
+    .first-screen .stat {
+        width: 40%;
+        margin-bottom: 1.25rem;
+    }
+
+    .header{
+        &__right-column-phone-number{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 834px) {
+
+    .first-screen .date__info{
+        width: 60%;
+    }
+
+    .first-screen .author {
+        width: 50%;
+    }
+
+    .first-screen .stat {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 670px) {
+    .first-screen .date__info{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .first-screen .date__info{
+        width: 80%;
+    }
+
+    .first-screen .author {
+        width: 70%;
+    }
+
+    .first-screen .stat {
+        width: 80%;
+    }
+
+    .first-screen{
+        &__header{
+            font-size: 2.5rem;
+        }
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+    .first-screen .date__info{
+        flex-direction: column;
+    }
+
+    .date__info-publication{
+        margin-bottom: 0.5rem;
+    }
+
+    .first-screen .author {
+        width: 80%;
+    }
+
+    .first-screen .stat {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .first-screen{
+        &__article-tags{
+            flex-wrap: wrap;
+        }
+    }
+
+    .first-screen .author {
+        width: 90%;
+    }
+
+    .tags__list-item{
+        margin-bottom: 0.625rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .first-screen{
+            &__header{
+            font-size: rem;
+        }
+    }
+}

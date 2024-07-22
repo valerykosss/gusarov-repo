@@ -1,0 +1,130 @@
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1 {
+	font-weight: inherit;
+	font-size: inherit;
+	font-family: "TT Firs";
+    color: #151519;
+    font-size: 3.5rem;
+}
+
+h2{
+    font-weight: inherit;
+	font-size: inherit;
+	font-family: "Radiate Sans Expanded";
+    color: #151519;
+    font-size: 2rem;
+}
+
+h4{
+	font-weight: inherit;
+	font-size: inherit;
+	font-family: "Radiate Sans Expanded";
+    color: #151519;
+    font-size: 1.125rem;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: "Century Gothic";
+    font-size: 16px;
+}
+
+.content_container {
+	max-width: 1320px;
+	margin: 0px auto;
+	padding: 0px;
+	box-sizing: content-box;
+    width: 100%;
+}
+
+main{
+	position: relative;
+}
+
+@media screen and (max-width: 1440px) {
+	html{
+		font-size: 13px;
+	}
+
+	.content_container {
+		max-width: 1120px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+
+}
+
+@media screen and (max-width: 1140px) {
+	.content_container {
+		max-width: 980px;
+	}
+}
+
+
+@media screen and (max-width: 1024px) {
+	.content_container {
+		max-width: 810px;
+	}
+}
+
+@media screen and (max-width: 834px) {
+	html{
+		font-size: 11px;
+	}
+
+	.content_container {
+		max-width: 640px;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	.content_container {
+		max-width: 500px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.content_container {
+		max-width: 420px;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.content_container {
+		max-width: 360px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.content_container {
+		max-width: 310px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+
+}
